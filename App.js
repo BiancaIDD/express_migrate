@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 
 import db from "./config/database.js";
+import router from "./routes/routes.js";
 
 
 
@@ -21,6 +22,8 @@ try {
     console.error("Unable to connect to the database:", error);
 }
 
+
+app.use(router);
 
 
 app.listen(4001, () => console.log("Server running at http://localhost:4001"));

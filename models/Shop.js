@@ -26,3 +26,5 @@ module.exports = (sequelize, DataTypes) => {
   });
   return Shop;
 };
+
+export default Shop;
